@@ -7,40 +7,75 @@ body {
 
 .header{
     display: flex;
-    align-items: center;
-    padding: 0 16px;
+    padding-inline: 300px;
     font-size: 24px;
-    font-weight: bolder;
     color: #f9faf8;
     background: #1f2937;   
+    padding-block-end: 100px;
+    justify-content: space-around;
+}
+
+.picandlink{
+    display: flex;
+    flex-direction: column;
 }
 
 .header img{
-    max-width: 300px;
-    max-height: 100px;
+    max-width: 400px;
+    max-height: 200px;
 }
 
 .headersubtext{
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-flow: column wrap;
+    justify-content: left;
+    flex-flow: column nowrap;
+    text-align: left;
+    font-size: 32px;
+    max-width: 220px;
+}
+
+.headersubtext button{
+    border: none;
+}
+    
+#header{
+    margin-bottom: 80px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+
+#sub{
+    font-size: 15px;
+    width: 380px;
+    margin-top: -30px;
+    filter: contrast(80%);
 }
 
 .links{
     display: flex;
     flex-direction: row;
-    font-size: 16px;
+    font-size: 15px;
+    margin-bottom: 70px;
 }
 
 a:link{
     color: #f9faf8;
     text-decoration: none;
+    
 }
+
+a:visited{
+    color: #f9faf8;
+
+}
+
 
 .body{
     display: flex;
     flex-direction: column;
+    margin-bottom: 80px;
 }
 
 .body{
@@ -51,23 +86,23 @@ a:link{
   padding: 20px;
   display: flex;
   justify-content: center;
-}
-
-.container p{
-    font-size: smaller;
+  align-self: center;
+  width: 800px;
 }
 
 .container img{
     width: 150px;
     height: 150px;
-    border: 3px solid #3882f6;
+    border: 4px solid #3882f6;
     border-radius: 10px;
-    padding: 10px;
 }
 
-.card {
-    width: 250px;
-  }
+
+#lorem{
+    filter: contrast(80%);
+    align-self: center;
+    font-size: 15px;
+}
 
 ul{
     list-style: none;
@@ -82,14 +117,13 @@ ul{
     text-decoration-color: #1f2937;
     background-color: #E5E7EB;
     padding: 60px;
-    padding-right: 480px;
-    padding-left: 480px;
+    padding-inline: 500px;
     text-align: end;
 }
 
 .quotes cite{
     display: flex;
-    font-size: 36px;
+    font-size: 39px;
     text-decoration-color: #1f2937;
     background-color: #E5E7EB;
     text-align: left;
@@ -101,20 +135,25 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 16px;
-    margin: 50px;
+    padding: 20px;
+    padding-top: 30px;
+    margin: 40px;
     color: #f9faf8; 
     flex-direction: row;
+    margin-inline: 520px;
+    border-radius: 6px;
 }
     
 .ctatext{
     text-align: left;
     font-size: 24px;
-
 }
 
-.ctatext p{
-    font-size: 15px;
+#p{
+    font-size: 18px;
+    margin-top: -20px;
+    font-weight: lighter;
+
 }
 
 
@@ -123,10 +162,10 @@ button{
         color: #f9faf8; 
         background-color: #3882f6;
         font-size: 15px; 
-        line-height: 15px; 
-        padding: 5px;
+        padding: 6px;
         border-radius: 6px; 
-        margin-left: 50px;
+        border-color: #f9faf8;
+        width: 110px;
     }
         
 .footer{
@@ -135,5 +174,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px;
+    padding: 24px;
+    font-size: 15px;
+    font-weight: lighter;
 }
